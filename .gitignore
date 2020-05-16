@@ -1,0 +1,13 @@
+
+*.o
+converter.cpp
+.gitattributes
+*.adpcm
+*.wav
+*.dev
+*.exe
+TXM-ADPCM-DECODE_private.h
+TXM-ADPCM-DECODE_private.rc
+TXM-ADPCM-DECODE_private.res
+TXM-ADPCM-DECODE.layout
+README.txt
