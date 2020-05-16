@@ -6,6 +6,7 @@ converter.cpp
 *.wav
 *.dev
 *.exe
+TXM-ADPCM-DECODE.ico
 TXM-ADPCM-DECODE_private.h
 TXM-ADPCM-DECODE_private.rc
 TXM-ADPCM-DECODE_private.res
