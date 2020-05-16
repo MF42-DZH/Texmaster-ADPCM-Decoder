@@ -3,6 +3,8 @@
  Some code taken from the source files for the external player.
 
 ## Build
+Requires GCC.
+
 Navigate to the directory of the repository after cloning / downloading and do the following command:
 
 `g++ *.cpp *.c *.h -o TXM-ADPCM-DECODE -std=c++11`
