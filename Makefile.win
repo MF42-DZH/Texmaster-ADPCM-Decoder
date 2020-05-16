@@ -1,0 +1,45 @@
+# Project: TXM-ADPCM-DECODE
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = TXM-ADPCM-DECODE_private.res
+OBJ      = main.o fileloader.o adpcm_decode.o adpcm.o converter.o $(RES)
+LINKOBJ  = main.o fileloader.o adpcm_decode.o adpcm.o converter.o $(RES)
+LIBS     = -L"C:/TDM-GCC-9.2.0-x86_64/lib" -L"C:/TDM-GCC-9.2.0-x86_64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/TDM-GCC-9.2.0-x86_64/include" -I"C:/TDM-GCC-9.2.0-x86_64/x86_64-w64-mingw32/include" -I"C:/TDM-GCC-9.2.0-x86_64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/TDM-GCC-9.2.0-x86_64/include" -I"C:/TDM-GCC-9.2.0-x86_64/x86_64-w64-mingw32/include" -I"C:/TDM-GCC-9.2.0-x86_64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/TDM-GCC-9.2.0-x86_64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = TXM-ADPCM-DECODE.exe
+CXXFLAGS = $(CXXINCS) -Wall -g3 -std=c++17
+CFLAGS   = $(INCS) -Wall -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+fileloader.o: fileloader.cpp
+	$(CPP) -c fileloader.cpp -o fileloader.o $(CXXFLAGS)
+
+adpcm_decode.o: adpcm_decode.c
+	$(CPP) -c adpcm_decode.c -o adpcm_decode.o $(CXXFLAGS)
+
+adpcm.o: adpcm.cpp
+	$(CPP) -c adpcm.cpp -o adpcm.o $(CXXFLAGS)
+
+converter.o: converter.c
+	$(CPP) -c converter.c -o converter.o $(CXXFLAGS)
+
+TXM-ADPCM-DECODE_private.res: TXM-ADPCM-DECODE_private.rc 
+	$(WINDRES) -i TXM-ADPCM-DECODE_private.rc --input-format=rc -o TXM-ADPCM-DECODE_private.res -O coff 
+
