@@ -5,7 +5,7 @@
 ## Build
 Navigate to the directory of the repository after cloning / downloading and do the following command:
 
-`g++ *.cpp *.c *.h -o TXM-ADPCM-DECODE -std=c++11 -Wall`
+`g++ *.cpp *.c *.h -o TXM-ADPCM-DECODE -std=c++11`
 
 ## Usage
 `TXM-ADPCM-DECODER [ADPCM File; required] [Loop Point Sample Number; optional]`
