@@ -12,3 +12,4 @@ TXM-ADPCM-DECODE_private.rc
 TXM-ADPCM-DECODE_private.res
 TXM-ADPCM-DECODE.layout
 README.txt
+*.win
