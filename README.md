@@ -4,6 +4,7 @@
 
 ## Build
 Navigate to the directory of the repository after cloning / downloading and do the following command:
+
 `g++ main.cpp converter.c converter.h fileloader.cpp fileloader.h adpcm.cpp adpcm.h adpcm_decode.c adpcm_decode.h -o TXM-ADPCM-DECODE -std=c++11 -Wall`
 
 ## Usage
