@@ -1,5 +1,6 @@
 # Texmaster-ADPCM-Decode
- Decoder for the custom ADPCM format used in Texmaster2009
+ Decoder for the custom ADPCM format used in Texmaster2009.
+ Some code taken from the source files for the external player.
 
 ## Build
 `!! TODO !!`
