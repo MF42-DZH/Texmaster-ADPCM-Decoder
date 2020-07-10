@@ -1,5 +1,5 @@
 OBJS     = main.o adpcm.o fileloader.o adpcm_decode.o converter.o
-OUT      = TXM-ADPCM-adpcm_decode
+OUT      = TXM-ADPCM-DECODE
 CC       = gcc
 CFLAGS   = -Ofast -std=c18 -Wall -Wextra
 CXX      = g++
