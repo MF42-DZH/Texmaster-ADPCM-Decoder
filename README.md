@@ -3,11 +3,12 @@
  Some code taken from the source files for the external player.
 
 ## Build
-Requires GCC.
+Requires GCC & G++.
 
 Navigate to the directory of the repository after cloning / downloading and do the following command:
 
-`g++ *.cpp *.c *.h -o TXM-ADPCM-DECODE -std=c++11`
+`make` or `mingw32-make` depending on your compiler distribution.
+Use the `rebuild` or `rebuild-win` rules to rebuild all object files and the final program.
 
 ## Usage
 `TXM-ADPCM-DECODER [ADPCM File; required] [Loop Point Sample Number; optional]`
